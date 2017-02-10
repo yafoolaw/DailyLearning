@@ -101,6 +101,30 @@ int BiTreeDepth(SqBiTree T)
 	return j;
 }
 
+/**
+ *  初始条件：二叉树存在
+ *  操作结果：当T不空，用e返回T的根，返回OK；否则返回ERROR，e无定义
+ */
+Status Root(SqBiTree T,TElemType *e)
+{
+    if (BITreeEmpty(T)) { /* T空 */
+        return ERROR;
+        
+    } else {
+    
+        *e=T[0];
+        return OK;
+    }
+    
+}
+
+/**
+ *  初始条件：二叉树T存在，e是T中某个结点（的位置）
+ *  操作结果：返回处于位置e(层，本层序号)的结点的值
+ */
+
+
+
 
 
 
